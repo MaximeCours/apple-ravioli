@@ -6,9 +6,24 @@ on:
       - main
 
 jobs:
-  build-frontend:
+  test-format:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 2
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v3
+      - name: Installing Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install packages
+        run: npm ci
+      - name: Run packages format check
+        run: npm run format:check
+  test-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
     steps:
       - name: Checking out code
         uses: actions/checkout@v3
