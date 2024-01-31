@@ -1,5 +1,13 @@
 body {
   font-family: 'SF Pro Display', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
   min-height: 200vh;
   margin: 0;
+  color: #0c0c0c;
+}
+
+span.light {
+  color: #8c8c8c;
 }
