@@ -1,4 +1,6 @@
 body {
   font-family: 'SF Pro Display', sans-serif;
+  min-height: 200vh;
   margin: 0;
 }
+
