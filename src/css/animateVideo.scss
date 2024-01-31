@@ -1,17 +1,16 @@
 .animateVideoContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-background {
-    min-width: 50%;
-    min-height: 50%;
-    border-radius: 11%;
-  }
-  
-#container {
-    height: 300vh;
+  min-width: 50%;
+  min-height: 50%;
+  border-radius: 11%;
 }
-  
+
+#container {
+  height: 300vh;
+}

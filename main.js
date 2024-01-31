@@ -6,7 +6,7 @@ import './src/css/animateVideo.scss'
 // JS
 import { nav } from './src/sections/nav.js'
 import { heroHeader } from './src/sections/heroHeader.js'
-import { animateVideo } from './src/sections/animateVideo.js';
+import { animateVideo } from './src/sections/animateVideo.js'
 
 document.querySelector('#app').innerHTML = `
     <nav></nav>
