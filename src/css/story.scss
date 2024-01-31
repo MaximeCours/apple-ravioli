@@ -11,15 +11,25 @@
     color: #000;
     font-size: 40px;
     font-weight: 700;
+    opacity: 1;
+    transform: translateX(0);
+    transition:
+      opacity 1s,
+      transform 1s ease-in-out;
   }
 
   p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
+    transform: translateX(0);
+    transition:
+      opacity 1s,
+      transform 1s ease-in-out;
   }
   .btn {
-    background-color: #e97e70;
+    background: linear-gradient(to left, #e97e70 50%, #111111 50%) right;
+    background-size: 300% 100%;
     border: none;
     color: #fff;
     padding: 15px 40px;
@@ -32,10 +42,25 @@
     margin-top: 44px;
     cursor: pointer;
     border-radius: 24px;
+    transition: 1.7s ease-in-out;
+    transform: translateX(0);
+
+    &:hover {
+      background-position: left;
+      span {
+        transform: rotate(360deg);
+      }
+    }
 
     span {
       font-size: 40px;
-      margin-right: 10px;
+      margin-right: 30px;
+      transition: 1.7s ease-in-out;
     }
+  }
+
+  .white {
+    color: #fff;
+    height: 100vh;
   }
 }
