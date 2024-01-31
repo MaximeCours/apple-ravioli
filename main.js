@@ -22,7 +22,6 @@ document.querySelector('#app').innerHTML = `
     <section id="application"></section>
     <section id="story"></section>
     <section id="inspiration"></section>
-
 `
 
 nav(document.querySelector('nav'))
