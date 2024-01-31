@@ -7,7 +7,7 @@ export function inspiration(element) {
   if (!element) return
 
   element.innerHTML = `
-    <h2>Inspiration Culinaire</h2>
+    <h2 class="title-inspiration">Inspiration Culinaire</h2>
     <img class="steve" src="/img/inspiration/steve-ravioli.png" alt="Steve jobs making ravioli">
     <div class="cols">
       <div class="col">
@@ -62,7 +62,7 @@ export function inspiration(element) {
   )
 
   gsap.fromTo(
-    'h2',
+    '.title-inspiration',
     { autoAlpha: 0, y: 100 },
     {
       duration: 2,
