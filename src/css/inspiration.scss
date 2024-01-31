@@ -1,0 +1,36 @@
+#inspiration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  gap: 80px;
+
+  .steve,
+  .ravioli {
+    width: 100%;
+  }
+
+  .cols {
+    display: flex;
+    gap: 100px;
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+
+      img {
+        border-radius: 36px;
+
+        &.inspiration1 {
+          width: 550px;
+        }
+
+        &.inspiration2 {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
