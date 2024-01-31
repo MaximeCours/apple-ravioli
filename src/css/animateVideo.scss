@@ -3,14 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .video-background {
-  min-width: 50%;
-  min-height: 50%;
+  position: sticky;
+  top: 11%;
+  width: 40%;
+  height: auto;
   border-radius: 11%;
 }
 
 #container {
-  height: 300vh;
+  position: sticky;
+  height: 500vh;
 }

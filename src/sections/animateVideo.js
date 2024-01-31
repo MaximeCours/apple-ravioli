@@ -4,15 +4,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export function animateVideo(element) {
   element.innerHTML = `
   <div class="animateVideoContainer">
-    <h2>You’ve never seen everything like this before.</h2>
-    <video src="/video/ravioli-can.mp4" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted" class="video-background"></video>
+    <video src="/video/ravioli-can-960.mp4" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted" class="video-background"></video>
     <div id="container"></div>
-  </div>
+  <div>
   `
+
+  console.clear()
+  /* The encoding is super important here to enable frame-by-frame scrubbing. */
+
+  // ffmpeg -i ~/Downloads/Toshiba\ video/original.mov -movflags faststart -vcodec libx264 -crf 23 -g 1 -pix_fmt yuv420p output.mp4
+  // ffmpeg -i ~/Downloads/Toshiba\ video/original.mov -vf scale=960:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p output_960.mp4
 
   const video = document.querySelector('.video-background')
   let src = video.currentSrc || video.src
+  console.log(video, src)
 
+  /* Make sure the video is 'activated' on iOS */
   function once(el, event, fn, opts) {
     var onceFn = function (e) {
       el.removeEventListener(event, onceFn)
@@ -27,14 +34,17 @@ export function animateVideo(element) {
     video.pause()
   })
 
+  /* ---------------------------------- */
+  /* Scroll Control! */
+
   gsap.registerPlugin(ScrollTrigger)
 
   let tl = gsap.timeline({
     defaults: { duration: 1 },
     scrollTrigger: {
       trigger: '#container',
-      start: 'top top',
-      end: 'bottom bottom',
+      start: 'top center',
+      end: 'bottom center',
       scrub: true,
     },
   })
@@ -43,14 +53,15 @@ export function animateVideo(element) {
     tl.fromTo(
       video,
       {
-        currentTime: 0,
+        currentTime: video.duration || 1,
       },
       {
-        currentTime: video.duration || 1,
+        currentTime: 0,
       }
     )
   })
 
+  /* When first coded, the Blobbing was important to ensure the browser wasn't dropping previously played segments, but it doesn't seem to be a problem now. Possibly based on memory availability? */
   setTimeout(function () {
     if (window['fetch']) {
       fetch(src)

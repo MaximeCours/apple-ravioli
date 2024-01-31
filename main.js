@@ -8,7 +8,6 @@ import './src/css/animateVideo.scss'
 import './src/css/inspiration.scss'
 import './src/css/application.scss'
 import './src/css/story.scss'
-import './src/css/ravioli.scss'
 // JS
 import { nav } from './src/sections/nav.js'
 import { header } from './src/sections/header.js'
@@ -17,7 +16,6 @@ import { application } from './src/sections/application.js'
 import { story } from './src/sections/story.js'
 import { inspiration } from './src/sections/inspiration.js'
 import { animateVideo } from './src/sections/animateVideo.js'
-import { ravioli } from './src/sections/ravioli.js'
 
 document.querySelector('#app').innerHTML = `
     <nav></nav>
@@ -26,7 +24,6 @@ document.querySelector('#app').innerHTML = `
     <section id="animateVideo"></section>
     <section id="application"></section>
     <section id="story"></section>
-    <section id="ravioli"></section>
     <section id="inspiration"></section>
 `
 
@@ -36,5 +33,4 @@ heroHeader(document.querySelector('#heroHeader'))
 animateVideo(document.querySelector('#animateVideo'))
 application(document.querySelector('#application'))
 story(document.querySelector('#story'))
-ravioli(document.querySelector('#ravioli'))
 inspiration(document.querySelector('#inspiration'))
