@@ -1,4 +1,4 @@
-#inspiration{
+#inspiration {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,26 +7,27 @@
   margin: auto;
   gap: 80px;
 
-  .steve,.ravioli{
+  .steve,
+  .ravioli {
     width: 100%;
   }
 
-  .cols{
+  .cols {
     display: flex;
     gap: 100px;
-    .col{
+    .col {
       display: flex;
       flex-direction: column;
       gap: 80px;
 
-      img{
+      img {
         border-radius: 36px;
 
-        &.inspiration1{
+        &.inspiration1 {
           width: 550px;
         }
 
-        &.inspiration2{
+        &.inspiration2 {
           width: 450px;
         }
       }
