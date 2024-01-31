@@ -1,0 +1,41 @@
+#story {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 120px;
+  .grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-gap: 180px;
+  }
+  .title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .btn {
+    background-color: #e97e70;
+    border: none;
+    color: #fff;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 44px;
+    cursor: pointer;
+    border-radius: 24px;
+
+    span {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+  }
+}

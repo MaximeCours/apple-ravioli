@@ -1,5 +1,7 @@
 #application {
-  padding: 120px 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 120px;
   text-align: center;
 
   .application-title {
@@ -16,6 +18,7 @@
 
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
 }
