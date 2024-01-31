@@ -1,0 +1,21 @@
+#application {
+  padding: 120px 100px;
+  text-align: center;
+
+  .application-title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+
+  .application-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
