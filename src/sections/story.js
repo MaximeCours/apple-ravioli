@@ -15,7 +15,6 @@ export function story(element) {
         <button class="btn" id="story-btn"><span>+</span> En apprendre plus</button>
         </div>
       </div>
-      <div class="white"/>
         `
 
   const storyTitle = document.getElementById('story-title')
