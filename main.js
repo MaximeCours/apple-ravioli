@@ -8,7 +8,9 @@ import './src/css/animateVideo.scss'
 import './src/css/inspiration.scss'
 import './src/css/application.scss'
 import './src/css/story.scss'
+import './src/css/leaf.scss'
 // JS
+import { leaf } from './src/sections/leaf.js'
 import { nav } from './src/sections/nav.js'
 import { header } from './src/sections/header.js'
 import { heroHeader } from './src/sections/heroHeader.js'
@@ -19,6 +21,7 @@ import { animateVideo } from './src/sections/animateVideo.js'
 
 document.querySelector('#app').innerHTML = `
     <nav></nav>
+    <section id="leaf"></section>
     <section id="header"></section>
     <section id="heroHeader"></section>
     <section id="animateVideo"></section>
@@ -28,6 +31,7 @@ document.querySelector('#app').innerHTML = `
 `
 
 nav(document.querySelector('nav'))
+leaf(document.querySelector('#leaf'))
 header(document.querySelector('#header'))
 heroHeader(document.querySelector('#heroHeader'))
 animateVideo(document.querySelector('#animateVideo'))
