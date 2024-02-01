@@ -48,17 +48,32 @@ export function animateVideo(element) {
       end: 'bottom center',
       scrub: true,
       onEnter: () => {
-        gsap.to(document.body, { backgroundColor: "#000000", duration: 1, ease: "power1.inOut" });
-
+        gsap.to(document.body, {
+          backgroundColor: '#000000',
+          duration: 1,
+          ease: 'power1.inOut',
+        })
       },
       onEnterBack: () => {
-        gsap.to(document.body, { backgroundColor: "#1e1e1e", duration: 1, ease: "power1.inOut" });
+        gsap.to(document.body, {
+          backgroundColor: '#1e1e1e',
+          duration: 1,
+          ease: 'power1.inOut',
+        })
       },
       onLeave: () => {
-        gsap.to(document.body, { backgroundColor: "#ffffff", duration: 1, ease: "power1.inOut" });
+        gsap.to(document.body, {
+          backgroundColor: '#ffffff',
+          duration: 1,
+          ease: 'power1.inOut',
+        })
       },
       onLeaveBack: () => {
-        gsap.to(document.body, { backgroundColor: "#ffffff", duration: 1, ease: "power1.inOut" });
+        gsap.to(document.body, {
+          backgroundColor: '#ffffff',
+          duration: 1,
+          ease: 'power1.inOut',
+        })
       },
     },
   })
