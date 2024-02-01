@@ -5,13 +5,13 @@ export function nav(element) {
     <div class="menu">
         <ul>
             <li class="active">
-                <a href="#">Overview</a>
+                <a href="#">Apercu</a>
             </li>
             <li>
-                <a href="#">Guided Tour</a>
+                <a href="#">Presentation</a>
             </li>
             <li>
-                <a href="#">Tech Specs</a>
+                <a href="#">Spécifications techniques</a>
             </li>
         </ul>
         <a href="#">
