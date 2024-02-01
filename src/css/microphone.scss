@@ -27,11 +27,13 @@
   position: fixed;
   bottom: 20px;
   right: 90px;
-  background-color: #bdbdbd84;
-  color: #484848;
   padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 250px;
   height: 50px;
+  background: rgba(194, 194, 194, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
