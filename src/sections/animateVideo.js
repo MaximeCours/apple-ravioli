@@ -42,7 +42,7 @@ export function animateVideo(element) {
   let tl = gsap.timeline({
     defaults: { duration: 1 },
     scrollTrigger: {
-      markers: true,
+      markers: false,
       trigger: '#container',
       start: 'top center',
       end: 'bottom center',
