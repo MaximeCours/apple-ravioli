@@ -1,12 +1,15 @@
 #leaf {
   z-index: 999;
-  width: 20px;
-  height: 40px;
-  background-color: #00ff00;
+  width: 150px;
+  // background-color: #00ff00;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Centrer la feuille horizontalement */
+  top: 50%;
+  left: 40%;
   bottom: -40px; /* Position initiale en dessous de l'écran */
   transition: bottom 0.5s ease-in-out; /* Transition pour un mouvement fluide */
+}
+
+#leaf img {
+  width: 100%; /* Assurez-vous que l'image occupe toute la largeur de la div */
+  height: auto; /* Permet à l'image de conserver son ratio d'aspect */
 }
