@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function application(element) {
   element.innerHTML = `
-    <h2 class="application-title">Vous naviguez simplement en utilisant vos yeux, vos mains et votre voix.</h2>
+    <h2 class="application-title">Savourer la vie avec nos raviolis</h2>
     <div class="application-grid">
       <img id="image-left" src="/img/iphone-left.png" alt="header">
       <img id="image-right" src="/img/iphone-right.png" alt="header">
