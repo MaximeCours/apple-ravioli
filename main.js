@@ -24,16 +24,15 @@ import { footer } from './src/sections/footer.js'
 import { microphone } from './src/sections/microphone.js'
 
 document.querySelector('#app').innerHTML = `
-    <nav></nav>
-    <section id="leaf"></section>
-    <section id="header"></section>
-    <section id="animateVideo"></section>
-    <section id="application"></section>
-    <section id="story"></section>
-    <section id="ravioli"></section>
-    <section id="inspiration"></section>
-    <section id="microphone"></section>
-    <footer></footer>
+<nav></nav>
+<section id="leaf"></section>
+<section id="header"></section>
+<section  id="animateVideo"></section>
+<section id="application"></section>
+<section id="story"></section>
+<section id="ravioli"></section>
+<section id="inspiration"></section><section id="microphone"></section>
+<footer></footer>
 `
 
 nav(document.querySelector('nav'))
