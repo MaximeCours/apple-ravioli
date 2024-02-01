@@ -13,7 +13,7 @@ export function application(element) {
   `
 
   gsap.to('#image-left', {
-    x: -100,
+    x: 100,
     ease: 'none',
     scrollTrigger: {
       trigger: '.application-grid',
@@ -24,7 +24,7 @@ export function application(element) {
   })
 
   gsap.to('#image-right', {
-    x: 100,
+    x: -100,
     ease: 'none',
     scrollTrigger: {
       trigger: '.application-grid',

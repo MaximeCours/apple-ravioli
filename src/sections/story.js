@@ -21,32 +21,28 @@ export function story(element) {
 
   gsap.from(storyTitle, {
     opacity: 0,
-    x: '-100%',
+    x: -200,
+    ease: 'none',
     scrollTrigger: {
       trigger: storyTitle,
       start: 'top 80%',
-      toggleActions: 'play reverse play reverse',
-      onEnterBack: () => {
-        gsap.to(storyTitle, { opacity: 0 })
-      },
+      end: 'bottom 70%',
+      scrub: true,
     },
-    ease: 'power1.inOut',
   })
 
   const storyDescription = document.getElementById('story-description')
 
   gsap.from(storyDescription, {
     opacity: 0,
-    x: '100%',
+    x: 200,
+    ease: 'none',
     scrollTrigger: {
       trigger: storyDescription,
       start: 'top 70%',
-      toggleActions: 'play reverse play reverse',
-      onEnterBack: () => {
-        gsap.to(storyDescription, { opacity: 0 })
-      },
+      end: 'bottom 60%',
+      scrub: true,
     },
-    ease: 'power1.inOut',
   })
 
   const storyBtn = document.getElementById('story-btn')
@@ -54,14 +50,12 @@ export function story(element) {
   gsap.from(storyBtn, {
     opacity: 0,
     x: '100%',
+    ease: 'none',
     scrollTrigger: {
       trigger: storyBtn,
-      start: 'top 70%',
-      toggleActions: 'play reverse play reverse',
-      onEnterBack: () => {
-        gsap.to(storyBtn, { opacity: 0 })
-      },
+      start: 'top 80%',
+      end: 'bottom 90%',
+      scrub: true,
     },
-    ease: 'power1.inOut',
   })
 }
