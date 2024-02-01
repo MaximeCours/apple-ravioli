@@ -1,6 +1,6 @@
 #application {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 120px;
   text-align: center;
 
@@ -14,7 +14,7 @@
   .application-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 250px;
 
     img {
       width: 100%;
