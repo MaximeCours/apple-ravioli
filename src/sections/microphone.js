@@ -4,7 +4,7 @@ export function microphone(element) {
   element.innerHTML = `
   <div class="microphone-output" id="output"></div>
 <div class="microphone-button" id="startListening">
-  <img id="siri" src="/img/siri.png"/>
+  <img id="siri" src="/img/siri-3.gif"/>
 </div>
 `
   webVoiceHub()
@@ -14,12 +14,14 @@ export function microphone(element) {
 
   function changerImage() {
     var image = document.getElementById('siri')
-    image.src = '/img/siri-anime-2.gif'
+    image.src = '/img/siri-anime-3.gif'
     image.classList.add('fade-out')
 
     setTimeout(function () {
-      image.src = '/img/siri.png'
       image.classList.remove('fade-out')
-    }, 5000)
+      setTimeout(function () {
+        image.src = '/img/siri-3.gif'
+      }, 300)
+    }, 5742)
   }
 }
