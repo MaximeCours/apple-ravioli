@@ -1,0 +1,37 @@
+#microphone {
+  display: flex;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+}
+
+.microphone-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 1s ease-out;
+  }
+  .fade-out {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.microphone-output {
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  background-color: #bdbdbd84;
+  color: #484848;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 50px;
+}

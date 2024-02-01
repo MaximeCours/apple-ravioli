@@ -18,6 +18,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.34",
     "gsap": "^3.12.5",
-    "three": "^0.161.0"
+    "three": "^0.161.0",
+    "webvoicehub": "^1.4.0"
   }
 }

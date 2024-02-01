@@ -10,6 +10,7 @@ import './src/css/story.scss'
 import './src/css/ravioli.scss'
 import './src/css/footer.scss'
 import './src/css/leaf.scss'
+import './src/css/microphone.scss'
 // JS
 import { leaf } from './src/sections/leaf.js'
 import { nav } from './src/sections/nav.js'
@@ -20,6 +21,7 @@ import { inspiration } from './src/sections/inspiration.js'
 import { animateVideo } from './src/sections/animateVideo.js'
 import { ravioli } from './src/sections/ravioli.js'
 import { footer } from './src/sections/footer.js'
+import { microphone } from './src/sections/microphone.js'
 
 document.querySelector('#app').innerHTML = `
     <nav></nav>
@@ -30,6 +32,7 @@ document.querySelector('#app').innerHTML = `
     <section id="story"></section>
     <section id="ravioli"></section>
     <section id="inspiration"></section>
+    <section id="microphone"></section>
     <footer></footer>
 `
 
@@ -41,4 +44,5 @@ application(document.querySelector('#application'))
 story(document.querySelector('#story'))
 ravioli(document.querySelector('#ravioli'))
 inspiration(document.querySelector('#inspiration'))
+microphone(document.querySelector('#microphone'))
 footer(document.querySelector('footer'))
