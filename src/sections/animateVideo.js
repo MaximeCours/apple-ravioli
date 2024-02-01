@@ -42,10 +42,24 @@ export function animateVideo(element) {
   let tl = gsap.timeline({
     defaults: { duration: 1 },
     scrollTrigger: {
+      markers: true,
       trigger: '#container',
       start: 'top center',
       end: 'bottom center',
       scrub: true,
+      onEnter: () => {
+        gsap.to(document.body, { backgroundColor: "#000000", duration: 1, ease: "power1.inOut" });
+
+      },
+      onEnterBack: () => {
+        gsap.to(document.body, { backgroundColor: "#1e1e1e", duration: 1, ease: "power1.inOut" });
+      },
+      onLeave: () => {
+        gsap.to(document.body, { backgroundColor: "#ffffff", duration: 1, ease: "power1.inOut" });
+      },
+      onLeaveBack: () => {
+        gsap.to(document.body, { backgroundColor: "#ffffff", duration: 1, ease: "power1.inOut" });
+      },
     },
   })
 
